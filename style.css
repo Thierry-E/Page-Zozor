@@ -1,0 +1,49 @@
+/*Ajout de la police personnalisée.*/
+
+@font-face {
+    font-family: 'ballparkweiner';
+    src: url('polices/ballpark-webfont.eot');
+    src: url('polices/ballpark-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark-webfont.woff2') format('woff2'),
+         url('polices/ballpark-webfont.woff') format('woff'),
+         url('polices/ballpark-webfont.ttf') format('truetype'),
+         url('polices/ballpark-webfont.svg#ballparkweiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'day_romanregular';
+    src: url('polices/dayrom-webfont.eot');
+    src: url('polices/dayrom-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom-webfont.woff2') format('woff2'),
+         url('polices/dayrom-webfont.woff') format('woff'),
+         url('polices/dayrom-webfont.ttf') format('truetype'),
+         url('polices/dayrom-webfont.svg#day_romanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Mise en page générale*/
+
+body{
+    background-image: url("images/fond_jaune.png" no-repeat);
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #181818;
+}
+
+#bloc-page{
+    width: 900px;
+    margin: auto;
+}
+
+/*Mise en page Header et Nav.*/
+
+/*Mise ne page Div Bannière*/
+
+/*Mise en page Section, Article et Aside.*/
+
+/*Mise en page Footer*/
