@@ -30,17 +30,20 @@
 /*Mise en page générale*/
 
 body{
+
     background-image: url("images/fond_jaune.png");
     font-family: "Trebuchet MS", Arial, sans-serif;
     color: #181818;
 }
 
 #bloc-page{
+
     width: 900px;
     margin: auto;
 }
 
 section h1, footer h1, nav a {
+
     font-family: "day_romanregular", serif;
     font-weight: normal;
     text-transform: uppercase;
@@ -49,27 +52,31 @@ section h1, footer h1, nav a {
 /*Mise en page Header et Nav.*/
 
 header{
+
     height: 100px;
     background: url("images/separateur.png") repeat-x bottom;
 }
 
 header img {
+
     width: 59px;
     height: 60px;
 }
 
 header h1{
 
+   flex-direction: row;
    font-family: "ballparkweiner", serif;
    font-size: 2.5 em;
    font font-weight: normal;
    margin: 0 0 0 10px; 
-   position: absolute;
+   position: fixed;
    top: 40px;
    left: 565px;
 }
 
 header h2{
+
     font-family: "day_romanregular", serif;
     font-size: 1.1em;
     font-weight: normal;
@@ -77,18 +84,21 @@ header h2{
 }
 
 nav ul{
+
     list-style-type: none;
     display : flex;
-    position: absolute;
+    position: fixed;
     top: 55px;
     left: 1000px;
 }
 
 nav li{
+
     margin-right: 15px;
 }
 
 nav a{
+
     font-size: 1.3em;
     color: #181818;
     padding-bottom: 3px;
@@ -96,11 +106,59 @@ nav a{
 }
 
 nav a:hover{
+
     color: #760001;
     border-bottom: 3px solid #760001;
 }
 
 /*Mise ne page Div Bannière*/
+
+#fond{
+
+    display: flex;
+    height: 220px;
+    margin-top: 15px;;
+    background: url(images/sanfrancisco.jpg);
+    border-radius: 10px;
+}
+
+#description{
+
+    display: flex;
+    width: 900px;
+    height: 45px;
+    color: #fff;
+    align-self: flex-end;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.bouton-rouge{
+
+    width: 110px;
+    height: 22px;
+    display: flex;
+    align-self: center;
+    justify-items: center;
+    background: url(images/fond_degraderouge.png);
+    border-radius: 3px;
+    color: #fff;
+    opacity: 1;
+    font-size: 1em;
+    position: fixed;
+    left: 1272px;
+    padding-left: 12px;
+}
+
+.fleche-header{
+    width: 5px;
+    height: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
 
 /*Mise en page Section, Article et Aside.*/
 
