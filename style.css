@@ -39,6 +39,7 @@ body{
 #bloc-page{
 
     width: 900px;
+    text-align: justify;
     margin: auto;
 }
 
@@ -47,6 +48,13 @@ section h1, footer h1, nav a {
     font-family: "day_romanregular", serif;
     font-weight: normal;
     text-transform: uppercase;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #000;
+    text-align: justify;
 }
 
 /*Mise en page Header et Nav.*/
@@ -68,9 +76,9 @@ header h1{
    flex-direction: row;
    font-family: "ballparkweiner", serif;
    font-size: 2.5 em;
-   font font-weight: normal;
+   font-weight: normal;
    margin: 0 0 0 10px; 
-   position: fixed;
+   position: absolute;
    top: 40px;
    left: 565px;
 }
@@ -87,8 +95,8 @@ nav ul{
 
     list-style-type: none;
     display : flex;
-    position: fixed;
-    top: 55px;
+    position: absolute;
+    top: 53px;
     left: 1000px;
 }
 
@@ -117,7 +125,6 @@ nav a:hover{
 
     display: flex;
     height: 220px;
-    margin-top: 15px;;
     background: url(images/sanfrancisco.jpg);
     border-radius: 10px;
 }
@@ -126,13 +133,14 @@ nav a:hover{
 
     display: flex;
     width: 900px;
-    height: 45px;
+    height: 56px;
     color: #fff;
     align-self: flex-end;
+    align-items: center; 
     background: rgba(0, 0, 0, 0.5);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    align-items: center;
+    
     padding-left: 10px;
 }
 
@@ -145,12 +153,12 @@ nav a:hover{
     justify-items: center;
     background: url(images/fond_degraderouge.png);
     border-radius: 3px;
-    color: #fff;
-    opacity: 1;
     font-family: arial, serif;
     font-weight: normal;
     font-size: 0.9em;
-    position: fixed;
+    color: #fff;
+    opacity: 1;
+    position: absolute;
     left: 1280px;
     padding-top: 5px;
     padding-left: 15px;
@@ -166,4 +174,82 @@ nav a:hover{
 
 /*Mise en page Section, Article et Aside.*/
 
+section{
+    
+    display: flex;
+    margin: 10px 10px;
+}
+
+article{ 
+
+    width: 70%;
+    margin-right: 30px;
+}
+
+article h1{
+
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+article img{
+
+    margin-right: 10px;
+}
+
+aside{
+    
+    align-self: center;
+    width: 30%;
+    background-color: #706b64;
+    border-radius: 5px;
+    text-align: justify;
+    padding: 0 10px;
+    margin-top: -105px;
+}
+aside h1 {
+
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: -20px;
+}
+
+aside p{
+
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.photo-zozor img{
+
+    border: 2px solid #000;
+}
+
+.photo-zozor{
+
+    text-align: center;
+}
+
+#reseaux{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#fleche-bulle{
+    position: relative;
+    left: -20px;
+    top: 140px;
+}
 /*Mise en page Footer*/
+
+footer{
+    display: flex;
+}
+
+#amis ul{
+    justify-content: flex-start;
+
+}
