@@ -75,7 +75,7 @@ header h1{
 
    flex-direction: row;
    font-family: "ballparkweiner", serif;
-   font-size: 2.5 em;
+   font-size: 2.5em;
    font-weight: normal;
    margin: 0 0 0 10px; 
    position: absolute;
@@ -127,6 +127,7 @@ nav a:hover{
     height: 220px;
     background: url(images/sanfrancisco.jpg);
     border-radius: 10px;
+    margin-top: 15px;
 }
 
 #description{
@@ -190,7 +191,7 @@ article h1{
 
     display: flex;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 3px;
 }
 
 article img{
@@ -206,14 +207,14 @@ aside{
     border-radius: 5px;
     text-align: justify;
     padding: 0 10px;
-    margin-top: -105px;
+    margin-top: -45px;
 }
-aside h1 {
+aside h1{
 
     color: #fff;
     margin-bottom: 10px;
     text-align: center;
-    padding-top: -20px;
+    padding-top: 5px;
 }
 
 aside p{
@@ -241,15 +242,46 @@ aside p{
 #fleche-bulle{
     position: relative;
     left: -20px;
-    top: 140px;
+    top: 120px;
 }
 /*Mise en page Footer*/
 
 footer{
+
     display: flex;
+    background: url("images/separateur.png") repeat-x, url("images/ico_top.png") no-repeat;
+    background-position:top;
+    padding-top: 25px;
+    justify-content: space-between;
 }
 
-#amis ul{
-    justify-content: flex-start;
+footer h1{
 
+    font-size: 1.1em;
+}
+
+#tweet p{
+    font-size: 0.9em;
+}
+
+#photos img{
+    border: 1px solid #000;
+    margin-right: -1px;
+}
+
+#amis h1{
+
+    padding-left: 30px;
+}
+
+#liste{
+
+    display: flex;
+    list-style-image: url("images/ico_liensexterne.png");
+    font-size: 0.9em;
+}
+#liste a{
+
+    color: #760001;
+    text-decoration: none;
 }
